@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1>S.T.E.P ITitans</h1>
+    </div>
+<div class="myFace">
+    <div class="mytinyEyes">
+       <div class="tinyEye"></div>
+       <div class="tinyEye"></div>
+    </div>
+ </div>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
+<style>
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #d1eaff;
+   }
+   .container{
+    margin: 6rem;
+    padding-left:rem ;
+    background-color: #5d0866;
+    color: #fff;
+   }
+   .myFace {
+      position: relative;
+      width: 310px;
+      height: 310px;
+      border-radius: 50%;
+      background-color: #ffcd00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+   }
+   .myFace::before {
+      content: "";
+      position: absolute;
+      top: 190px;
+      width: 160px;
+      height: 80px;
+      background: #eb2626;
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+      transition: 0.5s;
+   }
+   .myFace:hover::before {
+      top: 210px;
+      width: 150px;
+      height: 20px;
+      background: #c810dc;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+   }
+   .mytinyEyes {
+      position: relative;
+      top: -40px;
+      display: flex;
+   }
+   .mytinyEyes .tinyEye {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      display: block;
+      background: #fff;
+      margin: 0 15px;
+      border-radius: 50%;
+   }
+   .mytinyEyes .tinyEye::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      background: #333;
+      border-radius: 50%;
+   }
+</style>
